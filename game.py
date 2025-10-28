@@ -504,42 +504,42 @@ class Controller():
                 self.keep_going = False
 
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE or event.key == pygame.K_q:
+                if event.key == pygame.K_ESCAPE:
                     self.keep_going = False
-                elif event.key == pygame.K_LEFT:
+                elif event.key == pygame.K_a:
                     self.key_left = True
                     self.model.set_moving(True)
-                elif event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_d:
                     self.key_right = True
                     self.model.set_moving(True)
-                elif event.key == pygame.K_SPACE:
+                elif event.key == pygame.K_w:
                     self.key_space = True
-                elif event.key == pygame.K_DOWN:
+                elif event.key == pygame.K_s:
                     self.key_down = True
 
             elif event.type == pygame.KEYUP: #this is keyReleased!
                 match event.key:
-                    case pygame.K_LEFT:
+                    case pygame.K_a:
                         self.key_left = False
                         self.model.set_moving(False)
-                    case pygame.K_RIGHT:
+                    case pygame.K_d:
                         self.key_right = False
                         self.model.set_moving(False)
-                    case pygame.K_SPACE:
+                    case pygame.K_w:
                         self.key_space = False
                     case pygame.K_ESCAPE:
                         self.keep_going = False
-                    case pygame.K_DOWN:
+                    case pygame.K_s:
                         self.key_down = False
                     case pygame.K_e:
                         Controller.edit_mode = not Controller.edit_mode
                         if Controller.edit_mode:
                             Controller.add_mode = True
-                    case pygame.K_a:
+                    case pygame.K_q:
                         Controller.add_mode = True
                     case pygame.K_r:
                         Controller.add_mode = False
-                    case pygame.K_s:
+                    case pygame.K_k:
                         #save the map to a json file 
                         with open("map.json", "w") as file:
                             json.dump(self.model.marshal(), file, indent=4)
