@@ -10,8 +10,6 @@ Setup:
 3) Ensure python is installed on device
 4) Run program using: python game.py in terminal
 ------------------
-
-------------------
 KeyBinds:
 W: Traverse Vertically (jumps)
 A: Traverse right
