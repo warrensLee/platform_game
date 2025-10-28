@@ -2,9 +2,8 @@
 This platform game was worked on throughout the Programming Paradigms course at the University of Arkansas. The implementation of this project demonstrates the usage of MVC architecture, game design, Polymorphism, object-oriented programming, and basic game physics and graphics.
 
 
-Instructions:
+Setup Instructions & Keybindings:
 ------------------
-Setup:
 1) Install zip of project folder
 2) Unzip project folder
 3) Ensure python is installed on device
