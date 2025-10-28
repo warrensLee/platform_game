@@ -4,7 +4,23 @@ This platform game was worked on throughout the Programming Paradigms course at 
 
 Instructions:
 ------------------
+Setup:
+1) Install zip of project folder
+2) Unzip project folder
+3) Ensure python is installed on device
+4) Run program using: python game.py in terminal
 ------------------
+
+------------------
+KeyBinds:
+W: Traverse Vertically (jumps)
+A: Traverse right
+S: Throws fireball
+D: Traverse left
+E: Opens edit mode
+Q: Enters add mode (within edit mode)
+R: Enters remove mode (within edit mode)
+ESCAPE: Closes application
 ------------------
 
 Final Implementation Report:
